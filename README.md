@@ -1,4 +1,4 @@
-# Climate-Change-Conference
+# Climate Change Conference
 
 > This is a website for a climate change conference which contains details about the purpose, audience and speakers that will be present, as well as how the programme will unfold on the day of the conference.
 
