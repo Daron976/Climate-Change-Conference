@@ -41,7 +41,7 @@
 - Choose any browser from the options that appear
 
 ### Access
-- In order to access the wedsite online please click this link ...
+- In order to access the wedsite online please click this link [Live Demo](https://daron976.github.io/Climate-Change-Conference/)
 
 ## Author/s
 
