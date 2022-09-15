@@ -218,9 +218,7 @@ h2 {
 .program-list {
   background: rgba(255, 255, 255, 0.16);
   display: grid;
-  /* flex-direction: row; */
   grid-template-columns: 15% 25% 60%;
-  /* grid-auto-rows: max-content; */
   align-items: center;
   text-align: left;
   grid-auto-rows: auto;
@@ -667,7 +665,7 @@ h2 {
   }
 
   .red-border {
-    border:  1px solid #ec5242;
+    border: 1px solid #ec5242;
     padding: 0.7rem;
     border-radius: 5px;
   }
