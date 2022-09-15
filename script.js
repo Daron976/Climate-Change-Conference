@@ -172,7 +172,7 @@ function showFullProgram() {// eslint-disable-line
   programBtn.setAttribute('onclick', 'SeeLess()'); // eslint-disable-line
 }
 
-function SeeLess() {// eslint-disable-linesss
+function SeeLess() { // eslint-disable-line
   programContainer.style.removeProperty('max-height');
   programBtn.textContent = 'See Entire Program';
   programBtn.setAttribute('onclick', 'showFullProgram()');
