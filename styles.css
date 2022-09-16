@@ -1,0 +1,672 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+
+/* mobile version */
+
+/* header */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  background-image: linear-gradient(rgba(211, 211, 211, 0.8), rgba(211, 211, 211, 0.9)), url(images/headline_background.jpg);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.fa-bars {
+  color: #272a31;
+}
+
+.display-none {
+  display: none;
+}
+
+.mobile-menu {
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #272a31;
+  padding: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-menu-link-items {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile-menu a {
+  color: white;
+}
+
+.open-mobile-menu,
+.close-mobile-menu {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  border: none;
+  background: none;
+  font-size: large;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+}
+
+#red-text {
+  color: #ec5242;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  color: #ec5242;
+  padding-left: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.header-msg,
+.location {
+  font-size: 1.2rem;
+}
+
+.header-msg {
+  color: #272a31;
+  background: rgba(211, 211, 211, 0.776);
+  padding: 0.5rem 1rem;
+  border: 3.5px solid white;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url(images/sun_set.jpg);
+  background-position: right center;
+}
+
+.date-with-location {
+  flex-direction: column;
+  gap: 1rem;
+  color: #272a31;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.location {
+  margin-top: 10px;
+}
+
+.about-headline,
+.about-address {
+  text-align: center;
+}
+
+.about-address strong {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.about-address {
+  font-size: 1.2rem;
+  font-weight: unset;
+  font-style: normal;
+}
+
+/* program */
+
+.main-program,
+.speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 1rem;
+  align-items: center;
+  color: white;
+}
+
+.main-program {
+  background-image: linear-gradient(#272a31, #303335);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.red-line {
+  width: 2.5rem;
+  height: 1px;
+  border: none;
+  background-color: #ec5242;
+  margin: 0 0 1.5rem;
+}
+
+.align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.program-list-container,
+.speaker-list-container,
+.speaker-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-header {
+  font-size: 0.8rem;
+  width: 99%;
+  overflow-wrap: break-word;
+  color: #ec5242;
+}
+
+.program-list,
+.speaker-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.program-list {
+  background: rgba(255, 255, 255, 0.16);
+  display: grid;
+  grid-template-columns: 15% 25% 60%;
+  align-items: center;
+  text-align: left;
+  grid-auto-rows: auto;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+}
+
+.program-details {
+  font-size: 0.7rem;
+}
+
+.program-list img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.program-info-btn {
+  width: fit-content;
+  padding: 2rem 2.5rem;
+  border: none;
+  background-color: #ec5242;
+  color: white;
+}
+
+/* featured speakers */
+
+.speakers {
+  color: #272a31;
+}
+
+.speaker-list img,
+.sponser-list-items img {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.speaker-list img {
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.speaker-header {
+  font-size: 1.5rem;
+}
+
+.speaker-list {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.speaker-info {
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.speaker-position {
+  color: #ec5242;
+}
+
+.speaker-btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 90vw;
+  font-size: 1.5rem;
+  background: transparent;
+  border: 1px solid #949494;
+  border-radius: 5px;
+  color: #272a31;
+}
+
+/* partners */
+
+.sponser-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.sponser-list-items img {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 0%;
+}
+
+/* about html */
+
+.about-logo {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 7rem;
+  padding: 1.2rem 3rem;
+  border: 1px solid #d3d3d3;
+  color: #272a31;
+}
+
+.about-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+/* .about-display hr {
+  width: 2.5rem;
+  margin-bottom: 2rem;
+  background-color: #ec5242;
+  bor
+} */
+
+.about-program {
+  background: white;
+  color: #272a31;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2e2e2e;
+  color: #d3d3d3;
+  padding: 2rem 0;
+  font-size: large;
+}
+
+.partners h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 8.5rem;
+  height: 3rem;
+}
+
+.copyright-with-logo {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.copyright {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.previous-conferences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  color: #272a31;
+}
+
+.conference {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  height: 30vh;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.cop26 {
+  background: linear-gradient(rgb(207 57 23), rgb(207 57 23)), url(images/cop26.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+}
+
+.cop24 {
+  background: linear-gradient(rgb(207 57 23), rgb(207 57 23)), url(images/cop24.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.conference-header {
+  font-size: 2.5rem;
+}
+
+.desktop-logo-info {
+  display: none;
+}
+
+.partners hr {
+  margin-top: 1rem;
+}
+
+.logo-hr hr {
+  width: 99vw;
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  border: none;
+  background-color: #ebebeb;
+}
+
+.web-logo {
+  display: none;
+}
+
+.cop {
+  margin-bottom: 1rem;
+}
+
+.previous-conferences hr {
+  margin: 0 0 1.5rem;
+}
+
+.previous-conferences-msg {
+  margin-bottom: 1.5rem;
+}
+
+.program-reveal-btn {
+  display: none;
+}
+
+/* desktop version */
+
+@media screen and (min-width: 768px) {
+  .display-desktop-none {
+    display: none;
+  }
+
+  .log-in {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    background-color: #272a31;
+    padding: 0.3rem 15rem;
+    gap: 1.5rem;
+  }
+
+  .page-header {
+    padding: 0;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    gap: 5rem;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .nav-bar a {
+    color: #272a31;
+  }
+
+  .headline {
+    padding: 8rem 10rem;
+    margin: 0;
+    gap: 3rem;
+  }
+
+  .header-title {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+
+  .header-msg {
+    max-width: 35vw;
+  }
+
+  .date-with-location {
+    margin: 2rem 0;
+  }
+
+  .date {
+    font-size: 2.5rem;
+  }
+
+  .program-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    max-height: 17rem;
+    overflow-y: hidden;
+    padding: 1rem 8rem;
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    max-width: 15rem;
+  }
+
+  .program-info-btn {
+    display: none;
+  }
+
+  .program-header,
+  .program-details {
+    font-size: unset;
+  }
+
+  .program-reveal-btn {
+    display: block;
+    border: none;
+    background: none;
+    color: #d3d3d3;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    margin-bottom: 5rem;
+  }
+
+  .speaker-header {
+    margin-top: 2.5rem;
+  }
+
+  .second-half {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .speaker-btn {
+    display: none;
+  }
+
+  .ulist-container {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .speaker-half-one-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .speaker-list {
+    max-width: 25rem;
+  }
+
+  .partners {
+    justify-content: space-evenly;
+  }
+
+  .copyright-with-logo {
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  footer .logo {
+    width: 15.5rem;
+    height: 5rem;
+  }
+
+  .about-logo {
+    width: 30rem;
+    height: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .log-in a {
+    color: white;
+  }
+
+  .fa-bars {
+    display: none !important;
+  }
+
+  .about-headline {
+    align-items: center;
+    text-align: center;
+  }
+
+  address .about-address {
+    font-size: 1.2rem;
+  }
+
+  .logo-info {
+    margin-top: 2rem;
+    max-width: 60rem;
+    text-align: center;
+  }
+
+  .cop {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .conference {
+    max-width: 25vw;
+  }
+
+  .about-partner {
+    display: none;
+  }
+
+  .about-footer {
+    background-color: #272a31;
+    color: white;
+  }
+
+  .previous-conferences-msg {
+    margin: 1rem 0 5rem;
+  }
+
+  .mobile-logo-info {
+    display: none;
+  }
+
+  .previous-conferences-header {
+    margin-top: 2rem;
+  }
+
+  .about-copyright-logo {
+    display: none;
+  }
+
+  .red-border {
+    border: 1px solid #ec5242;
+    padding: 0.7rem;
+    border-radius: 5px;
+  }
+}
